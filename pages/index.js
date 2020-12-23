@@ -12,7 +12,21 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I'm a front-end developer, learning Next.js</p>
+        <p>I'm a front-end developer, learning and taking challenges every days. Today I'm enjoying learning a Next.js</p>
+        <p>
+          <p>I do several practises in FreecodeCamp, I'm really happy to show my achievements. </p>
+          <ul>
+            <li>
+              This is my {' '} <a href="https://www.freecodecamp.org/cristian_pablo">FreecodeCamp Profile.</a>
+            </li>
+            <li>
+              This is my{' '} <a href="https://codepen.io/Cris_22380">CodePen Profile.</a>
+            </li>
+            <li>
+              This is my{' '} <a href="https://github.com/cris22380">Github Profile.</a>
+            </li>
+          </ul>
+        </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
