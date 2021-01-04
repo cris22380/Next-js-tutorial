@@ -7,7 +7,7 @@ export default function FreeTime() {
   return (
     <div className={utilStyles.divContainer}>
       <div style={{marginLeft: '1rem'}}>
-        <div className={utilStyles.headingXl}>Mountains taveling</div>
+        <div className={utilStyles.headingXl}>Mountains traveling</div>
       </div>
       <div className={utilStyles.galery}>
         {imagesList && (
