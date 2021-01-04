@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './styles.module.css'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Image({ image, text, title, type, galery }) {
+export default function Images({ image, text, title, type, galery }) {
   return (
     <div>
       {image && text && title && type && (
@@ -13,7 +14,7 @@ export default function Image({ image, text, title, type, galery }) {
             <div className={styles.imageText}>{text}</div>
           </div>
           <div className={styles.images}>
-            <img src={image} alt='foto'></img>
+            <Image src={image} alt='foto' width={450} height={450}/>
           </div>
         </div>
           </Link>
@@ -21,7 +22,7 @@ export default function Image({ image, text, title, type, galery }) {
       {image && galery && (
         <div>
           <div className={styles.imagesGalery}>
-            <img src={image} alt='foto'></img>
+            <Image src={image} alt='foto' width={450} height={450}/>
           </div>
         </div>
       )}

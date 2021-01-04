@@ -26,7 +26,7 @@ const imagesList = [
     type: 'running',
   },
   {
-    image: 'images/IMG_20200206_125959.jpg',
+    image: '/images/IMG_20200206_125959.jpg',
     title: 'Holidays in the mountain',
     text: 'In my vacations I love traveling with my family, I love going to the mountains, walking through the mountains, riding through these beautiful places.',
     type: 'mountain',
