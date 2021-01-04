@@ -1,12 +1,15 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from './styles.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Footer from './footer'
 
 const name = 'Cristian Martinez'
 export const siteTitle = 'Next.js Sample Website cris'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, reference }) {
+  const ref = reference && reference.ref;
+  const referenceTitle = reference && reference.referenceTitle;
   return (
     <div className={styles.container}>
       <Head>
@@ -29,10 +32,10 @@ export default function Layout({ children, home }) {
           <>
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className={`${styles.headerHomeImage}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading3Xl}>{name}</h1>
           </>
         ) : (
           <>
@@ -54,13 +57,14 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <Footer 
+        reference={ref}
+        home={home}
+        hrefBtn1="/freeTime"
+        hrefBtn2="/"
+        titleBtn1={referenceTitle}
+        titleBtn2="Back to home"
+        />
     </div>
   )
 }
