@@ -4,6 +4,22 @@ import Link from 'next/link'
 import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import SocialLinks from '../components/socialLinks'
+
+const list = [
+  {
+    href:'https://www.freecodecamp.org/cristian_pablo',
+    title:'FreecodeCamp',
+  },
+  {
+    href:'https://codepen.io/Cris_22380',
+    title:'CodePen',
+  },
+  {
+    href:'https://github.com/cris22380',
+    title:'Github',
+  },
+];
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,25 +29,16 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>I'm a front-end developer, learning and taking challenges every days. Today I'm enjoying learning a Next.js</p>
-        <p>
-          <p>I do several practises in FreecodeCamp, I'm really happy to show my achievements. </p>
-          <ul>
-            <li>
-              This is my {' '} <a href="https://www.freecodecamp.org/cristian_pablo">FreecodeCamp Profile.</a>
-            </li>
-            <li>
-              This is my{' '} <a href="https://codepen.io/Cris_22380">CodePen Profile.</a>
-            </li>
-            <li>
-              This is my{' '} <a href="https://github.com/cris22380">Github Profile.</a>
-            </li>
-          </ul>
-        </p>
+
+        <p>I do several practises in FreecodeCamp, I'm really happy to show my achievements. </p>
+
+        <SocialLinks socialLinkslist={list}/>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          <a href='https://nextjs.org/learn'>our Next.js tutorial</a>.)
         </p>
       </section>
+        
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

@@ -6,7 +6,7 @@ import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <Layout reference={postData.reference === 'about' && {ref: true, referenceTitle: postData.referenceTitle}}>
       <Head>
         <title>{postData.title}</title>
       </Head>

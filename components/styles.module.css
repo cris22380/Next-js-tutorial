@@ -1,0 +1,136 @@
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 4px 5px 5px rgb(182, 181, 181);
+  border: solid 1px rgb(56, 53, 53);
+}
+
+.headerHomeImage {
+  width: 10rem;
+  height: 8rem;
+  box-shadow: 4px 3px 3px rgb(182, 181, 181);
+  border: solid 1px rgb(56, 53, 53);
+}
+
+.imagesGalery {
+  display: flex;
+  margin: 1rem;
+  width: 25rem;
+  height: 20rem;
+  box-shadow: 4px 13px 13px rgb(182, 181, 181);
+  border: solid 1px rgb(56, 53, 53);
+}
+
+.images {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 25rem;
+  height: 20rem;
+  box-shadow: 0px 0px 13px 10px rgb(212, 209, 209);
+  border: solid 1px rgb(56, 53, 53);
+}
+
+.images:hover {
+  box-shadow: 0px 0px 30px 15px rgb(207, 201, 201);
+  transform: scale(1.02);
+  transition-duration: .2s;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.socialContainer {
+  display: flex;
+}
+.social {
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  height: 100px;
+  width: 33%;
+  background-color: lightseagreen;
+  box-shadow: 7px 5px 5px rgb(182, 181, 181);
+}
+
+.social:hover {
+  transform: scale(1.1);
+  background-color:rgb(135, 228, 215);
+}
+
+.socialButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.socialText {
+  text-align: center;
+  text-justify: auto;
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+
+.imageTextContainer {
+  margin-top: 3rem;
+  height: 8rem;
+  width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.imageText {
+  font-size: 0.8rem;
+  font-weight: 200;
+  white-space: initial;
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: flex-start;
+  height: 10rem;
+  width: 100%;
+}
+
+.footerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 0.7rem;
+  background-color: lightseagreen;
+  border-radius: 0.5em;
+  box-shadow: 7px 5px 5px rgb(182, 181, 181);
+  margin: 1rem;
+  margin-left: 0rem;
+}
+
+.footerButton:hover {
+  transform: scale(1.1);
+  background-color:rgb(135, 228, 215);
+}
+
+.a {
+  color: white;
+}
+.a:hover {
+  color: white;
+  font-size: 100%;
+}
